@@ -10,6 +10,20 @@ const it = (desc, fn) => {
   fn();
 }
 
+//helpers 
+function try_catch(method, val){
+  try {
+    new method(val)
+  }
+  catch(e){
+    val = e;
+    console.log(val.lineNumber);
+  }
+  finally{
+    return val;
+  }
+}
+
 //matchers 
 const expect = (value) => { return new Matchers(value) }
 
