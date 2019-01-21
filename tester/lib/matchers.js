@@ -16,4 +16,9 @@ class Matchers {
     }
   }
 
+  to_throw(assertation){
+    console.log('error!');
+    this.toBe(assertation);
+  }
+
 }

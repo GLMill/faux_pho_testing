@@ -12,5 +12,4 @@ class Square {
   area() {
       return this.size * this.size;
   }
-
 }
