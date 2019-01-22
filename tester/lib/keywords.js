@@ -7,8 +7,9 @@ const describe = function(desc, fn){
 
 const it = (desc, fn) => {
   console.log(desc);
-  check_for_befores();
+  hooks(before);
   fn();
+  hooks(after);
 }
 
 
@@ -33,7 +34,6 @@ function try_catch(method, val){
   }
   catch(e){
     val = e;
-
   }
   finally {
     return val;
@@ -45,4 +45,3 @@ const expect = (value) => { return new Matchers(value) }
 
 
 const allow = (obj) => { return new Mock(obj) };
-

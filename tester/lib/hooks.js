@@ -2,8 +2,16 @@ var before = null;
 var after = null;
 
 
-function check_for_befores(){
-    if(before){
-       before();
+
+function hooks(hook){
+    switch(hook){
+        case before:
+         if (before) before();
+         break;
+        case after:
+         if (after) after() ;
+         break
+        default:
+          break;
     }
-  }
+}
