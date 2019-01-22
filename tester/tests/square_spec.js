@@ -34,11 +34,15 @@ describe('area', function(){
 
 describe('square', ()=>{
 
-  before = new Square(50);
+  before = () => { return square = new Square(50) };
 
   it('sets a size property to size given', ()=>{
-    let square = new Square(50);
     expect(square.size).toBe(50);
+  })
+
+
+  it('sets a size property to size given', ()=>{
+    expect(square.size).toBe(500);
   })
 })
 

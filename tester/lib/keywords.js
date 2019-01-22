@@ -1,14 +1,16 @@
 //set-up
 
-const describe = (desc, fn) => {
+const describe = function(desc, fn){
   console.log(desc);
   fn();
 }
 
 const it = (desc, fn) => {
   console.log(desc);
+  check_for_befores();
   fn();
 }
+
 
 var double  = function(x){
   let obj = {};
@@ -44,9 +46,3 @@ const expect = (value) => { return new Matchers(value) }
 
 const allow = (obj) => { return new Mock(obj) };
 
-
-//before 
-
-function before(x){
-   console.log(x);
-}
