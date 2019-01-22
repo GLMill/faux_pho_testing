@@ -34,8 +34,8 @@ describe('area', function(){
 
 describe('square', ()=>{
 
-  before = () => { return square = new Square(50) };
-  after = () => { console.log('you gets all da pho dough!') }
+  var before = () => { return square = new Square(50) };
+  var after = () => { console.log('you gets all da pho dough!') }
 
   it('sets a size property to size given', ()=>{
     expect(square.size).toBe(50);
