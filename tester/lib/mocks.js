@@ -6,9 +6,7 @@ class Mock {
      
     to(method_name, method_val){
        Object.defineProperty(this.obj, method_name, {
-           value : method_val,
+           value : function(){ return method_val},
        });
     }
-
-
 }
