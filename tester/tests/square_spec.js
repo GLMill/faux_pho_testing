@@ -51,7 +51,7 @@ describe('square', ()=>{
 describe('testing doubles', ()=>{
   it('can work with doubles', ()=>{
     var test = double('test');
-    allow(test).to('say_hey','boo');
+    allow(test).to('say_hey').with('boo');
     expect(test.say_hey()).toBe('boo');
   })
 
