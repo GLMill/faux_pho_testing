@@ -1,8 +1,6 @@
 var before = null;
 var after = null;
 
-
-
 function hooks(hook){
     switch(hook){
         case before:

@@ -26,7 +26,7 @@ describe('area', function(){
   it('responds to area', ()=>{
     expect(new Square(5)).respond_to('area');
   })
-  it('calculate the area', ()=> {
+  it('calculate the area',()=> {
     var square = new Square(5);
     expect(square.area()).toBe(25)
   })
@@ -36,7 +36,6 @@ describe('square', ()=>{
   
   var context = {};
   before = () => { context.square = new Square(50) };
-  //after = () => { console.log('you gets all da pho dough!') }
 
   it('sets a size property to size given', ()=>{
     expect(context.square.size).toBe(50);
