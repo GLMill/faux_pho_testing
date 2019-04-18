@@ -11,14 +11,14 @@ Is a testing framework built for JS code. Inspired  by similiar frameworks Faux 
   })`
  - helpful terminal messages and coloring.
  - contains a respond_to method
-    `describe('area', function(){
-      `it('responds to area', ()=>{
-      `expect(new Square(5)).respond_to('area');
-      `})
-      `it('calculate the area',()=> {
-       `var square = new Square(5);
-        `expect(square.area()).toBe(25)
-      `})
+    `describe('area', function(){`
+      `it('responds to area', ()=>{`
+      `expect(new Square(5)).respond_to('area');`
+      `})`
+      `it('calculate the area',()=> {`
+       `var square = new Square(5);`
+        `expect(square.area()).toBe(25)`
+      `})`
  ` })`
  
  * How to run *
