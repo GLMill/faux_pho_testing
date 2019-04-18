@@ -20,8 +20,21 @@ Is a testing framework built for JS code. Inspired  by similiar frameworks Faux 
         `expect(square.area()).toBe(25)`
       `})`
  ` })`
+- It allows mocking 
+`describe('testing doubles', ()=>{` 
+  `it('can work with doubles', ()=>{`
+    `var test = double('test');`
+    `allow(test).to('say_hey').with('boo');`
+    `expect(test.say_hey()).toBe('boo');`
+  `})`
+  
+  
+  it('can create a double with predefined values', ()=>{
+    var test = double('test',{testing:'tester'});
+    expect(test.testing).toBe('tester');
+  })
  
- * How to run *
+ *How to run*
  
 Similiar to Jasmines stand alone runner, clone this repo then write your tests within the tests folder and src within the src!
 Include linkes to files you wish to test within the TestRunner.html file. 
