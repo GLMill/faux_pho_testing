@@ -1,5 +1,8 @@
 # Faux - Pho Testing Framework
 
+![pic of matchers](https://github.com/HuxleyM/faux_pho_testing/blob/master/images/faux_pho.png)
+![pic of terminal out put](https://github.com/HuxleyM/faux_pho_testing/blob/master/images/faux_pho_test_results.png)
+
 *Faux Pho*
 
 Is a testing framework built for JS code. Inspired  by similiar frameworks Faux Pho allows the following features: 
