@@ -1,22 +1,29 @@
-# Testing Framework
+# Faux - Pho Testing Framework
 
+*Faux Pho*
 
-*This week:*
-- You'll work in pairs
-- You'll have to create a testing framework for Javascript
-- You'll use that framework to test-drive a single page app
+Is a testing framework built for JS code. Inspired  by similiar frameworks Faux Pho allows the following features: 
 
-*Initial requirements for the testing framework (you should be working on this today):*
-- It should show descriptions of the tests
-- It should have an equality matcher
-- It should tell the user which tests passed or failed
-
-*Backlog or further requirements:*
-- The testing Framework should be extracted to its own Github repository with documentation to be reusable.
-- It should have a "throws errors" matcher
-- It should displays results in red and green
-- It should have helpful error messages (why has the test failed / error stack)
-- It should have a grouping functionality to organise tests
-- It should allow mocking
-- It should allow code to be run before each test
-- It should have a "respond to" matcher (edited) 
+- Equality Matching.
+- Allows a throws error matcher for class constructors with the try_catch(class, val)
+ ` it('throws an error if num is not positive', function(){
+    expect(try_catch(Square, -1)).to_throw('size should be a positive number');
+  })`
+ - helpful terminal messages and coloring.
+ - contains a respond_to method
+    `describe('area', function(){
+      `it('responds to area', ()=>{
+      `expect(new Square(5)).respond_to('area');
+      `})
+      `it('calculate the area',()=> {
+       `var square = new Square(5);
+        `expect(square.area()).toBe(25)
+      `})
+ ` })`
+ 
+ * How to run *
+ 
+Similiar to Jasmines stand alone runner, clone this repo then write your tests within the tests folder and src within the src!
+Include linkes to files you wish to test within the TestRunner.html file. 
+Then drag/open this into a browser window - chrome or fire fox is recommended!
+Open up the console to see your results!
